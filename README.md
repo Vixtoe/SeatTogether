@@ -1,5 +1,13 @@
 # SeatTogether
 
+![Supabase](https://img.shields.io/badge/Supabase-Backend-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?style=flat-square&logo=postgresql&logoColor=white)
+![AWS Amplify](https://img.shields.io/badge/AWS_Amplify-Hosting-FF9900?style=flat-square&logo=awsamplify&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_to_Amplify-181717?style=flat-square&logo=github&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Frontend-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-Markup-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6?style=flat-square&logo=css3&logoColor=white)
+
 > A cloud-hosted smart seat selection and sharing platform designed to reduce canteen crowding, optimize seat usage, and make sharing dining spaces effortless.
 
 ---
@@ -20,13 +28,11 @@ I worked mainly on the Supabase backend (PostgreSQL tables, queries and API inte
 
 ## Screenshots
 
-![Home interface](home_interface.png)
-
 ![Seat map](seat_map.png)
 
 ![My Table dashboard](my_table.png)
 
-<!-- Add cropped screenshots to the repo root and update the filenames. Do not include slides that show student IDs. -->
+![Home interface](home_interface.png)
 
 ---
 
@@ -39,7 +45,7 @@ I worked mainly on the Supabase backend (PostgreSQL tables, queries and API inte
 
 ## Key System Features
 
-* **Interactive Seat Map:** Displays a visual layout across canteen zones with seat status indicators (Available, Selected, Occupied, Closed).
+* **Interactive Seat Map:** Displays a visual layout across canteen zones with seat status indicators (Open, Taken, You, Closed).
 * **Seat-Level Selection:** Allows users to pick precise seats before occupying them.
 * **Table Access Control (Open / Closed):** Table hosts can set a table to "Open to Join" or "Closed" to prevent awkward interactions.
 * **Multi-Zone Navigation:** Supports pan and zoom across multiple zones of a large dining area.
@@ -50,9 +56,12 @@ I worked mainly on the Supabase backend (PostgreSQL tables, queries and API inte
 
 ## Tech Stack
 
-* **Frontend:** HTML, CSS, JavaScript (static site) [confirm against the repo]
-* **Backend and Database:** Supabase (PostgreSQL, API)
-* **Hosting and CI/CD:** AWS Amplify with automatic deploys from the GitHub main branch
+| Layer | Technology |
+| :--- | :--- |
+| Frontend | HTML, CSS, JavaScript (static site) [confirm against the repo] |
+| Backend and Database | Supabase (PostgreSQL, API) |
+| Hosting and CI/CD | AWS Amplify, automatic deploys from the GitHub main branch |
+| Source Control | GitHub |
 
 ---
 
@@ -67,7 +76,7 @@ I worked mainly on the Supabase backend (PostgreSQL tables, queries and API inte
           v (HTTPS)
  [ Supabase Backend ]
   |-- PostgreSQL Database (Seat, Table, User Status)
-  `-- Supabase API [and Realtime Sync: keep only if the code uses it]
+  `-- Supabase API [add "and Realtime Sync" only if the code uses it]
 ```
 
 ---
